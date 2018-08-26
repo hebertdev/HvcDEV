@@ -1,0 +1,1057 @@
+* , *:after, *::before{
+    margin: 0;
+    padding: 0;
+}
+
+
+  /* estilos de preloader */
+  .preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #009688;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #contenedor_carga{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+
+  #cargapreloader{
+    border:15px solid rgba(0,0,0,0.2);
+    border-top-color: rgba(0,0,0,0.6);
+    border-top-style: groove;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    animation: girar 1.5s linear infinite;
+    margin: 5px 0;
+  }
+
+  @keyframes girar {
+    from{
+      transform: rotate(0deg);
+    }
+
+    to{
+      transform: rotate(360deg);
+    }
+  }
+
+
+
+  /* fin estilos preloader */
+
+
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+
+li{
+  list-style: none;
+}
+.containerall{
+    height: 100vh;
+    width: 99%;
+}
+
+/*todo sobre el header*/
+
+.header{
+    height: 50px;
+    width: 100%;
+    background: #001f3f;
+    position: fixed;
+    z-index: 5;
+}
+
+.containerheader{
+    height: 50px;
+}
+
+
+
+.containerinfohebert{
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerimghebert{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 5px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.imghebertprofile{
+    width: 40px;
+    height: 40px;
+}
+
+.iconmenu{
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.titlehebert{
+    color: #0074D9;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+}
+
+.menu{
+    background:#001f3f;
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    left: -500px;
+    transition: all 0.5s;
+}
+
+.menuremover{
+    left: 0;
+}
+
+.menuquitar{
+    left: -1500px;
+
+}
+
+.containerlistas{
+    width: 90%;
+    margin: auto;
+}
+.listamenu{
+    color: white;
+	width:70% ;
+	height: 50px;
+	text-align: center;
+	font-size: 18px;
+	line-height: 50px;
+	border-bottom: 1px solid #0074D9;
+	cursor: pointer;
+	transition: all 0.5s;
+	margin: auto;
+	list-style: none;
+}
+.redessociales{
+    width: 100%;
+    display: flex;
+    margin: 9px auto;
+}
+.linksociales{
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    margin: 15px auto;
+}
+
+/*fin de todo sobre el header*/
+
+.containercontenido{
+    width: 100%;
+    border: 1px solid white;
+    margin:  auto;
+    height: 99vh;
+}
+
+
+
+
+/* todo sobre portada */
+.nportada{
+  background: black;
+}
+.bannerportaada{
+  width: 100%;
+  height: 100vh;
+  background: rgb(0, 159, 131);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../img/sfu.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banercolorportada{
+  width:100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.divsaludoportada{
+  height: 50px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+}
+.ultxtsaludoportada{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  animation-name: rotarportada;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes rotarportada {
+  0%{
+    top: 0;
+  }
+
+  20%{
+    top: 0;
+  }
+
+  25%{
+    top: -50px;
+  }
+
+  45%{
+    top: -50px;
+  }
+
+  50%{
+    top: 0;
+  }
+
+  70%{
+    top: 0;
+  }
+
+  75%{
+    top: -50px;
+  }
+
+  95%{
+    top: -50px;
+  }
+
+  100%{
+    top: 0;
+  }
+
+}
+
+
+
+.txtsaludoportada{
+  display: block;
+  height: 50px;
+  font-size: 23px;
+  text-align: center;
+  width: 100%;
+  line-height: 50px;
+
+}
+
+.conttxtportada{
+  width: 95%;
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+.txtportada{
+  color: #0074D9;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* fin de todo portada */
+
+/*todo sobre mi -----------*/
+.bannersobremi{
+    width: 100%;
+    height: 300px;
+    background: rgb(0, 159, 131);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../img/fondouno.jpg);
+  	background-size: cover;
+  	background-position: center;
+  	background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banercolorsobremi{
+    width:100%;
+    height: 100%;
+    background: rgba(0, 159, 131,0.8);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.txtsaludo{
+    font-size: 45px;
+    cursor: pointer;
+}
+
+.contenidopostionbanner{
+    height: 250px;
+    width: 100%;
+}
+.contenidobannerprofile{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid rgba(0,0,0,0.5);
+    margin:20px auto;
+}
+
+.imgprofilesobremi{
+    width: 100%;
+}
+
+.txtsobremi{
+    color: rgba(0, 159, 131,1);
+    font-size: 20px;
+    text-align: center;
+}
+
+.sobremiparticipaciones{
+    width: 100%;
+    margin:20px auto;
+    color: #03756d;
+}
+
+
+.titlecerficaciones{
+    text-align: center;
+    border-bottom: 3px solid #03756d;
+    font-size: 20px;
+}
+
+.modalimg{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btncross{
+  position: absolute;
+  color: white;
+  top: 0;
+  right: 0;
+  margin: 30px;
+  cursor: pointer;
+}
+
+
+.modalenable{
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modaldisable{
+  display: none;
+}
+
+.containerimgmodal{
+  width: 95%;
+  max-width: 700px;
+}
+
+.containerparticipaciones{
+  width: 95%;
+  margin: auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.certificados{
+  width: 300px;
+  height: 220px;
+  border:1px solid rgba(0,0,0,0.2);
+  margin: 5px;
+  text-align: center;
+  line-height: 22px;
+}
+
+.containerimgcertifications{
+  background: #025f58;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.imgcertifications{
+  width: 100%;
+  cursor: pointer;
+}
+
+.irlink{
+  position: absolute;
+  width: 130px;
+  height: 200px;
+  background: rgba(2, 95, 88,0.8);
+  top: 0;
+  left: 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.imgcertifications:hover + .irlink{
+  z-index: 1;
+  opacity: 1;
+}
+
+.irlink:hover{
+  z-index: 1;
+  opacity: 1;
+}
+
+
+
+.linkircertifcado{
+  color: white;
+  font-size: 25px;
+}
+
+/*fin de todo sobre mi ----------*/
+
+/*todo sobre habilidad ----------*/
+
+.containerhabiliti{
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+}
+.titlehability{
+    text-align: center;
+    color: orange;
+}
+.imgprofesional{
+    display: block;
+    width: 200px;
+    margin: auto;
+}
+
+.txthabilidad{
+    text-align: center;
+    font-size: 18px;
+    color: #001f3f;
+}
+
+.ulhabilidad{
+    width: 100%;
+}
+
+.listsahabilidad{
+    width: 150px;
+    margin: 15px auto;
+    border: 1px solid #0074D9;
+    text-align: center;
+    padding: 2px 5px;
+    list-style: none;
+    border-radius: 8px;
+    color: #0074D9;
+    cursor: pointer;
+}
+
+.bargridlist{
+    width: 100%;
+    background: #0074D9;
+    height: 40px;
+    display: flex;
+    color: white;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.gridlist{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    padding: 5px;
+}
+.conthabailidades{
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+}
+.conticonhabilidadcuadricula{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cuadiconhabilidad{
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+}
+
+.iconoshabilidadcuadricula{
+    width: 80px;
+    height: 80px;
+}
+
+.conticonhabilidad{
+    width: 100%;
+    margin: 5px auto;
+}
+.lisiconhabilidad{
+    width: 95%;
+    overflow: hidden;
+    display: flex;
+    border: 1px solid rgba(0,0,0,0.2);
+    margin: 15px auto;
+    border-radius: 8px;
+}
+.contimghabilidad{
+    width: 80px;
+    height: 80px;
+}
+.iconoshabilidad{
+    width: 80px;
+    height: 80px;
+}
+
+.listxtinfo{
+    margin: 8px;
+}
+
+.titleimagenhabilidad{
+    font-size: 18px;
+}
+.activatehabi{
+    background: orange;
+    border: 1px solid rgba(0,0,0,0.2);
+    color: white;
+}
+.activatevista{
+    background: rgba(0,0,0,0.5);
+}
+
+
+
+/*fin de todo sobre habilidad ----------*/
+
+/* todo sobre portafolio------------- */
+
+.titleportafolios{
+  font-size: 18px;
+  text-align: center;
+  color: #C62828;
+  margin: 20px 0;
+}
+
+.txtportafolios{
+  font-size: 18px;
+}
+
+.headerportafolios{
+  height: 30px;
+  width: 100%;
+  background: #da2121;
+}
+
+.ulporfaloio{
+  display: flex;
+  height: 30px;
+  margin: auto;
+}
+
+.optionsportafolios{
+  display: block;
+  padding: 0 7px;
+  text-align: center;
+  color: white;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.activeportafolio{
+  /* transform: scale(0.9); */
+  background-color: rgba(0,0,0,0.3);
+
+}
+
+.contenidoportafolio{
+  width: 100% - 1px;
+  display:flex;
+  justify-content:center;
+  flex-wrap: wrap;
+}
+
+.portafoliowebcontenido{
+  width: 250px;
+  height: 230px;
+  margin: 5px;
+  text-align: center;
+  border: 1px solid rgba(0,0,0,0.2);
+
+}
+.containerimgportafolio{
+  width: 100%;
+  height: 210px;
+  overflow: hidden;
+
+}
+.imgportafolio{
+  width:100%;
+  cursor: pointer;
+}
+
+.portafolioweb{
+  border:1px solid rgba(0,0,0,0.2)
+
+}
+.portafoliografico{
+  background: skyblue;
+}
+.portafoliomultimedia{
+  background: peru;
+}
+
+
+.containerimgmodalportafolio{
+  width: 98%;
+  max-width: 900px;
+  max-height: 90vh;
+  overflow: auto;
+}
+
+
+
+
+/* fin de todo sobre portafolio---------- */
+
+
+@media (min-width:780px){
+
+    .containerall{
+        display: flex;
+    }
+    /*todo sobre el header*/
+
+    .header{
+        width: 260px;
+        height: 100vh;
+        background:;
+        position: fixed;
+    }
+
+    .containerheader{
+         width: 280px;
+    }
+
+    .containerinfohebert{
+        display: block;
+    }
+
+    .containerimghebert{
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin: 25px auto;
+        border-radius: 50%;
+        border: 1px solid white;
+    }
+
+    .imghebertprofile{
+        width: 200px;
+        height: 350px
+    }
+
+    .iconmenu{
+        display: none;
+    }
+
+    .titlehebert{
+        text-align: center;
+        line-height: 50px;
+        font-size: 30px;
+    }
+
+    .menu{
+        display: block;
+        background: none;
+        position: static;
+        transition: none;
+    }
+
+    .listamenu{
+        color: white;
+	    width:70% ;
+    	height: 50px;
+    	text-align: center;
+    	font-size: 20px;
+    }
+
+    .listamenu:hover{
+        background: rgba(0,0,0,0.3);
+    }
+
+/*fin de todo sobre el header*/
+    .contenido{
+        width:65%;
+        margin:auto;
+    }
+
+/*todo sobre mi xd------*/
+
+    .storbo{
+        width: 250px;
+    }
+
+    .contenidopostionbanner{
+        height: 300px;
+    }
+
+/*fin de todo sobre mi*/
+
+/*todo sobre habilidad ----------*/
+    .titlehability{
+        font-size: 50px;
+    }
+    .ulhabilidad{
+        display: flex;
+    }
+    .listsahabilidad{
+        width: 120px;
+        font-size: 13px;
+    }
+
+    .cuadiconhabilidad{
+        width: 100px;
+        height: 100px;
+    }
+    .iconoshabilidadcuadricula{
+        width: 100px;
+        height: 100px;
+    }
+/*fin de todo sobre habilidad ----------*/
+
+}
+
+@media (min-width:900px){
+/*    todo sobre el header*/
+    .header{
+        width: 240px;
+    }
+
+    /*fin de todo sobre el header*/
+    .contenido{
+        width:68%;
+        margin:auto;
+    }
+
+/* todo sobre portada */
+    .titlehebert{
+      font-size: 25px;
+    }
+
+    .containerimghebert{
+      width: 170px;
+      height: 170px;
+    }
+
+
+    .txtsaludoportada{
+        font-size: 40px;
+    }
+    /* fin de todo sobre potada */
+
+/*todo sobre habilidad ----------*/
+    .titlehability{
+        font-size: 40px;
+    }
+    .ulhabilidad{
+        display: flex;
+    }
+    .listsahabilidad{
+        width: 120px;
+        font-size: 10px;
+        padding: 2px;
+    }
+
+    .listamenu{
+      font-size: 15px;
+      padding: 1px;
+      height: 40px;
+    }
+
+    .cuadiconhabilidad{
+        width: 100px;
+        height: 100px;
+    }
+    .iconoshabilidadcuadricula{
+        width: 100px;
+        height: 100px;
+    }
+/*fin de todo sobre habilidad ----------*/
+}
+
+@media (min-width:1500px){
+/*    todo sobre el header*/
+    .header{
+        width: 300px;
+    }
+
+    /*fin de todo sobre el header*/
+    .contenido{
+        width:78%;
+        margin:auto;
+    }
+
+
+
+/* todo sobre portada */
+
+
+    .txtsaludoportada{
+      font-size: 45px;
+    }
+/* fin de todo sobre potada */
+
+/*todo sobre mi xd------*/
+
+    .storbo{
+        width: 300px;
+    }
+
+    .txtsaludo{
+        font-size: 60px;
+    }
+
+    .bannersobremi{
+        height: 400px;
+    }
+    .contenidopostionbanner{
+        height: 400px;
+    }
+    .containerimgandtxt{
+       display: flex;
+    }
+
+    .conttxtsobremi{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contenidobannerprofile{
+        border: 3px solid rgba(0,0,0,0.2)
+    }
+
+    .txtsobremi{
+        font-size: 25px;
+    }
+
+    .sobremiparticipaciones{
+        margin: 35px 0;
+    }
+
+    .titlecerficaciones{
+        font-size: 30px;
+    }
+
+/*fin de todo sobre mi*/
+
+/*todo sobre habilidad ----------*/
+    .titlehability{
+        font-size: 70px;
+    }
+
+    .txthabilidad{
+        font-size: 30px;
+    }
+    .ulhabilidad{
+        display: flex;
+    }
+    .listsahabilidad{
+        width: 180px;
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .cuadiconhabilidad{
+        width: 150px;
+        height: 150px;
+    }
+    .iconoshabilidadcuadricula{
+        width: 150px;
+        height: 150px;
+    }
+
+    .conticonhabilidad{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .lisiconhabilidad{
+        width: 49%;
+    }
+
+    .contimghabilidad{
+        width: 120px;
+        height: 120px;
+    }
+    .iconoshabilidad{
+        width: 120px;
+        height: 120px;
+    }
+    .listxtinfo{
+        font-size: 19px;
+        color: #001f3f;
+    }
+
+    .titleimagenhabilidad{
+        font-size: 25px;
+        color: #0074D9;
+    }
+/*fin de todo sobre habilidad ----------*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*configuraciones y colores generados por vue js*/
+
+.menuactive{
+  background: rgba(0,0,0,0.4);
+}
+
+
+
+/*sobre mi cambios vue*/
+.headersobremi{
+    background: #025f58;
+
+}
+
+.menusobremi{
+    background: #025f58;
+}
+.titlesobremi{
+    color: #10e6c1;
+}
+
+.optionssobremi{
+    border-bottom:1px solid #10e6c1;
+}
+/*fin*/
+
+
+/*habilidades cambios vue*/
+
+.headerhabilidades{
+    background: orange;
+}
+
+.menuhabilidad{
+    background: orange;
+}
+
+.titlehabilidades{
+    color: orangered;
+}
+
+.optionshabilidades{
+    border-bottom:1px solid orangered;
+}
+
+
+/*fin*/
+
+.headerportafolio{
+  background: #da2121;
+}
+
+.menuportafolio{
+    background: #da2121;
+}
+
+.titleportafolio{
+    color: #ff9997;
+}
+
+.optionsportafolio{
+    border-bottom:1px solid #ff9997;
+}
+
+
+.headerblog{
+
+}
