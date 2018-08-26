@@ -44,6 +44,11 @@ let app = new Vue({
 
         portafolioweb:[
           {
+            "titlemodalportafolio":"WORK-TMC-tecnología",
+            "imagemodalportafolio":"img/portafolio/worktmc.png",
+            "linkmodal":"www.facebook.com"
+          },
+          {
             "titlemodalportafolio":"PAGE USER PLATZI DEMO",
             "imagemodalportafolio":"img/portafolio/linkuser.png",
             "linkmodal":"www.facebook.com"
