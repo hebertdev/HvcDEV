@@ -8,7 +8,7 @@ let app = new Vue({
         saludoportadados:'Estamos en constante actualización',
         remover:'salir',
         changeicon:'icon-menu',
-        cambiarcontenido:'nportafolio',
+        cambiarcontenido:'nportada',
         cambiarhabilidad:'htodo',
         cambiarportafolio:'portafolioweb',
 		    menu:'salir',
