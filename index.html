@@ -16,6 +16,7 @@
         </div>
       </div>
     </div>
+
     <div class="containerall" id="apphebert">
         <div class="header"
              v-bind:class="{'headersobremi':cambiarcontenido=='nsobremi',
@@ -169,7 +170,8 @@
                   <div class="containerparticipaciones">
 
                   <!-- contenido de certificaciones -->
-                    <div class="certificados" v-for="a in certificados">
+
+                    <!-- <div class="certificados" v-for="a in certificados">
                       <div class="containerimgcertifications">
                         <img class="imgcertifications"
                              v-bind:src="a.imagemodal"
@@ -181,7 +183,8 @@
                       <div>
                         {{a.titlemodal}}
                       </div>
-                    </div>
+                    </div> -->
+
                   <!-- contenido de certificaciones -->
 
                     <!-- modal sobre mi -->
@@ -371,27 +374,35 @@
                     </div>
                   </div>
                   <!-- fin contenido portafolio web  -->
-                  <!-- modal sobre portafolio -->
-                  <div class="modalimg" v-bind:class="{'modalenable':modalactive=='enablemodal',
-                                                       'modaldisable':modalactive=='disablemodal',
-                                                    }">
-                    <span class="btncross icon-cross" v-on:click="modalactive='disablemodal'"></span>
-                    <div class="containerimgmodalportafolio">
-                      <img v-bind:src="imagemodal" alt="" width="100%">
-                    </div>
-                  </div>
-                  <!-- modal sobre portafolio -->
+
                 </div>
                 <!-- portafolio grafico /*//** -->
                 <div class="contenidoportafolio portafoliografico" v-if="cambiarportafolio=='portafoliografico'">
-
+                  <div class="portafoliowebcontenidos" v-for="a in portafoliografico">
+                    <div class="containerimgportafolios">
+                      <img class="imgportafolio" src="img/portafolio/sitiowebone.png" v-bind:src="a.imagemodalportafolio"
+                      v-on:click="modalactive='enablemodal', imagemodal=a.imagemodalportafolio">
+                    </div>
+                    <div>
+                      {{a.titlemodalportafolio}}
+                    </div>
+                  </div>
                 </div>
                 <!-- portafolio multimediaaaaaa -->
                 <div class="contenidoportafolio portafoliomultimedia" v-if="cambiarportafolio=='portafoliomultimedia'">
 
                 </div>
-
               </div>
+              <!-- modal sobre portafolio -->
+              <div class="modalimg" v-bind:class="{'modalenable':modalactive=='enablemodal',
+                                                   'modaldisable':modalactive=='disablemodal',
+                                                }">
+                <span class="btncross icon-cross" v-on:click="modalactive='disablemodal'"></span>
+                <div class="containerimgmodalportafolio">
+                  <img v-bind:src="imagemodal" alt="" width="100%">
+                </div>
+              </div>
+              <!-- modal sobre portafolio -->
             </div>
             <div class="nblog containercontenido" v-if="cambiarcontenido=='nblog'">
             EN DESARROLLO . . . .
@@ -400,16 +411,7 @@
     </div>
 
 
-   <script>
-
-     window.onload = function(){
-     let preloader = document.getElementById('preloader');
-
-     preloader.style.visibility = 'hidden';
-     preloader.style.opacity = '0';
-     }
-
-   </script>
+   <script src="js/preloader.js"></script>
    <script src="js/vue.js"></script>
    <script  src="js/index.js"></script>
 </body>

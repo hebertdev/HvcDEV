@@ -3,6 +3,9 @@
     padding: 0;
 }
 
+#apphebert{
+  opacity: 0;
+}
 
   /* estilos de preloader */
   .preloader{
@@ -642,13 +645,26 @@ li{
   margin: 5px;
   text-align: center;
   border: 1px solid rgba(0,0,0,0.2);
-
+}
+.portafoliowebcontenidos{
+  width: 250px;
+  height: auto;
+  max-height: 230px;
+  margin: 5px;
+  text-align: center;
+  border: 1px solid rgba(0,0,0,0.2);
 }
 .containerimgportafolio{
   width: 100%;
   height: 210px;
   overflow: hidden;
+}
 
+.containerimgportafolios{
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  overflow: hidden;
 }
 .imgportafolio{
   width:100%;
@@ -660,7 +676,7 @@ li{
 
 }
 .portafoliografico{
-  background: skyblue;
+
 }
 .portafoliomultimedia{
   background: peru;

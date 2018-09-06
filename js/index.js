@@ -45,30 +45,72 @@ let app = new Vue({
         portafolioweb:[
           {
             "titlemodalportafolio":"WORK-TMC-tecnología",
-            "imagemodalportafolio":"img/portafolio/worktmc.png",
+            "imagemodalportafolio":"img/portafolio/web/worktmc.png",
             "linkmodal":"www.facebook.com"
           },
           {
             "titlemodalportafolio":"PAGE USER PLATZI DEMO",
-            "imagemodalportafolio":"img/portafolio/linkuser.png",
+            "imagemodalportafolio":"img/portafolio/web/linkuser.png",
             "linkmodal":"www.facebook.com"
           },
           {
             "titlemodalportafolio":"DOTA2 BUSCA TU TEAM",
-            "imagemodalportafolio":"img/portafolio/dota2btt.png",
+            "imagemodalportafolio":"img/portafolio/web/dota2btt.png",
             "linkmodal":"www.facebook.com"
           },
           {
             "titlemodalportafolio":"INVIE",
-            "imagemodalportafolio":"img/portafolio/invie.png",
+            "imagemodalportafolio":"img/portafolio/web/invie.png",
             "linkmodal":"www.facebook.com"
           },
           {
             "titlemodalportafolio":"E-COLORS",
-            "imagemodalportafolio":"img/portafolio/ecolors.png",
+            "imagemodalportafolio":"img/portafolio/web/ecolors.png",
             "linkmodal":"www.facebook.com"
           },
+        ],
 
+        portafoliografico:[
+          {
+            "titlemodalportafolio":"PORTADA WINTEACH",
+            "imagemodalportafolio":"img/portafolio/grafico/portadawinteach.png",
+            "linkmodal":"www.facebook.com"
+          },
+          {
+            "titlemodalportafolio":"LOGO WINTEACH",
+            "imagemodalportafolio":"img/portafolio/grafico/logo.png",
+            "linkmodal":"www.facebook.com"
+          },
+          {
+            "titlemodalportafolio":"LOGO EICHVI",
+            "imagemodalportafolio":"img/portafolio/grafico/loguito.png",
+            "linkmodal":"www.facebook.com"
+          },
+          {
+            "titlemodalportafolio":"PORTADA HEBERT",
+            "imagemodalportafolio":"img/portafolio/grafico/hebertp.jpg",
+            "linkmodal":"www.facebook.com"
+          },
+          {
+            "titlemodalportafolio":"PORTADA HEBERT 2",
+            "imagemodalportafolio":"img/portafolio/grafico/hebertp1.jpg",
+            "linkmodal":"www.facebook.com"
+          },
+          {
+            "titlemodalportafolio":"WORK-TMC LOGO",
+            "imagemodalportafolio":"img/portafolio/grafico/worklogo.png",
+            "linkmodal":"www.facebook.com"
+          },
+          {
+            "titlemodalportafolio":"Work-tmc LOGOTIPO",
+            "imagemodalportafolio":"img/portafolio/grafico/work-tmc-logo.png",
+            "linkmodal":"www.facebook.com"
+          },
+          {
+            "titlemodalportafolio":"DANIELA PORTADA",
+            "imagemodalportafolio":"img/portafolio/grafico/nancyda.png",
+            "linkmodal":"www.facebook.com"
+          },
         ],
 
         // fin de data para portafolio WEB
@@ -163,14 +205,6 @@ let app = new Vue({
       	         }
     	   },
 
-			{
-                "title":"bootstrap",
-                "description":"Bootstrap es una biblioteca multiplataforma o conjunto de herramientas de código abierto para diseño de sitios y aplicaciones web.",
-                "image":{
-                "imagelista":"img/habilidades/boostrap.png",
-                "imagecuadricula":"img/habilidades/boostrap.png"
-      	         }
-    	   },
 
 			{
                 "title":"php",
@@ -190,14 +224,6 @@ let app = new Vue({
       	         }
     	   },
 
-			{
-                "title":"foundation",
-                "description":"Foundation es un framework de interfaz de usuario responsive. Foundation proporciona una cuadrícula responsive e incluye componentes de interfaz de usuario HTML y CSS,",
-                "image":{
-                "imagelista":"img/habilidades/foundation.png",
-                "imagecuadricula":"img/habilidades/foundation.png"
-      	         }
-    	   },
 
 			{
                 "title":"dream weaver",
@@ -337,14 +363,6 @@ let app = new Vue({
       	         }
     	   },
 
-			{
-                "title":"bootstrap",
-                "description":"Bootstrap es una biblioteca multiplataforma o conjunto de herramientas de código abierto para diseño de sitios y aplicaciones web.",
-                "image":{
-                "imagelista":"img/habilidades/boostrap.png",
-                "imagecuadricula":"img/habilidades/boostrap.png"
-      	         }
-    	   },
 
 			{
                 "title":"php",
@@ -364,14 +382,6 @@ let app = new Vue({
       	         }
     	   },
 
-			{
-                "title":"foundation",
-                "description":"Foundation es un framework de interfaz de usuario responsive. Foundation proporciona una cuadrícula responsive e incluye componentes de interfaz de usuario HTML y CSS,",
-                "image":{
-                "imagelista":"img/habilidades/foundation.png",
-                "imagecuadricula":"img/habilidades/foundation.png"
-      	         }
-    	   },
 
 			{
                 "title":"dream weaver",
