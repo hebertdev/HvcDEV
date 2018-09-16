@@ -1071,3 +1071,14 @@ li{
 .headerblog{
 
 }
+
+
+
+/*  estilos bannner xd */
+
+.banerwinteach{
+  width: 100%;
+  margin: auto;
+  cursor: pointer;
+  margin: 10px 0;
+}

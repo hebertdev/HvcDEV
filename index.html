@@ -34,8 +34,12 @@
                                    'titleportafolio':cambiarcontenido=='nportafolio',
                     }">
                 Hebert Villafuerte
+
                 </h1>
+               
+
                 <div>
+
                 <span class="icon-menu iconmenu" v-if="changeicon=='icon-menu'"
                       v-on:click="remover='entrar',changeicon='icon-cross'"
                 ></span>
@@ -50,6 +54,7 @@
                                              'headerhabilidades':cambiarcontenido=='nhabilidad',
                                              'headerportafolio':cambiarcontenido=='nportafolio',
             }">
+                <small style="color:white;text-align:center;width:100%;display:block;margin:10px 0;">hebert.villafuerte.c@hotmail.com</small>
                 <ul class="containerlistas">
                     <li
                         class="listamenu"
@@ -113,6 +118,8 @@
                         <a href="https://www.instagram.com/hebertdev/" class="icon-instagram linksociales" target="_blank"></a>
                         <a href="https://www.linkedin.com/in/hebert-villafuerte-b9818411b/" class="icon-linkedin linksociales" target="_blank"></a>
                     </div>
+                    <a href="https://www.youtube.com/watch?v=EHj84AQrnyY&feature=youtu.be" target="_blank"> <img class="banerwinteach" src="img/bannerwxd.png" alt=""> </a>
+
                 </ul>
             </div>
         </div>
@@ -123,7 +130,9 @@
             <!--contenido de portada-->
             <div class="nportada containercontenido" v-if="cambiarcontenido=='nportada'" >
               <div class="bannerportaada">
+                  
                   <div class="banercolorportada">
+
                       <div class="storbo"></div>
                       <div class="divsaludoportada">
                         <ul class="ultxtsaludoportada">
@@ -131,12 +140,13 @@
                           <li class="txtsaludoportada">{{saludoportadados}}</li>
                         </ul>
 
+
+
                         <div class="conttxtportada">
-
+                          
                         </div>
-
                       </div>
-
+                  
                   </div>
               </div>
               <div class="contenidopostionbanner"></div>
